@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -e $1 ]; then
+	echo "$1 already exists";
+	exit;
+fi;
+
+mkdir $1
+cp tex/Makefile $1
+cp tex/main.tex $1
+touch $1/specificHeaders.tex
+

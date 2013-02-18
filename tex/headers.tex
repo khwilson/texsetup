@@ -1,0 +1,191 @@
+\usepackage{amsfonts,amsmath, amssymb,latexsym,amsthm}
+\usepackage{bbm, verbatim, multirow, textcomp}
+\setlength{\textheight}{8.75in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headheight}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\leftmargin}{0.0in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\parindent}{3pc}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows}
+
+\newcommand{\zee}{\mathbf{FIX ME}}
+\newcommand{\ol}{\overline}
+\newcommand{\ind}{\operatorname{ind}}
+
+\newcommand{\secretnote}[1]{}
+
+% Lie Theory
+\newcommand{\Ad}{\operatorname{Ad}}
+\renewcommand{\sl}{\mathfrak{sl}}
+\newcommand{\gl}{\mathfrak{gl}}
+\newcommand{\so}{\mathfrak{so}}
+\newcommand{\Lie}{\operatorname{Lie}}
+
+% Linear Algebra
+\newcommand{\coker}{\operatorname{coker}}
+\newcommand{\Pf}{\operatorname{Pf}}
+\newcommand{\ch}{\operatorname{ch}} % Characteristic Polynomial
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\codim}{\operatorname{codim}}
+
+% Some Groups
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\SL}{\operatorname{SL}}
+\newcommand{\PGL}{\operatorname{PGL}}
+\newcommand{\PSL}{\operatorname{PSL}}
+\newcommand{\GO}{\operatorname{GO}}
+\newcommand{\SO}{\operatorname{SO}}
+\newcommand{\Sp}{\operatorname{Sp}}
+\newcommand{\GSp}{\operatorname{GSp}}
+
+
+% Letter Short codes
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\G}{\mathbb{G}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\eps}{\varepsilon}
+
+% mathbb Letters
+\newcommand{\bA}{\mathbb{A}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bL}{\mathbb{L}}
+\newcommand{\bP}{\mathbb{P}}
+
+
+% mathcal Letters
+\newcommand{\sA}{\mathcal{A}}
+\newcommand{\sB}{\mathcal{B}}
+\newcommand{\sC}{\mathcal{C}}
+\newcommand{\sD}{\mathcal{D}}
+\newcommand{\sE}{\mathcal{E}}
+\newcommand{\sF}{\mathcal{F}}
+\newcommand{\sG}{\mathcal{G}}
+\newcommand{\sH}{\mathcal{H}}
+\newcommand{\sI}{\mathcal{I}}
+\newcommand{\sJ}{\mathcal{J}}
+\newcommand{\sK}{\mathcal{K}}
+\newcommand{\sL}{\mathcal{L}}
+\newcommand{\sM}{\mathcal{M}}
+\newcommand{\sN}{\mathcal{N}}
+\newcommand{\sO}{\mathcal{O}}
+\newcommand{\sP}{\mathcal{P}}
+\newcommand{\sQ}{\mathcal{Q}}
+\newcommand{\sR}{\mathcal{R}}
+\newcommand{\sS}{\mathcal{S}}
+\newcommand{\sT}{\mathcal{T}}
+\newcommand{\sU}{\mathcal{U}}
+\newcommand{\sV}{\mathcal{V}}
+\newcommand{\sW}{\mathcal{W}}
+\newcommand{\sX}{\mathcal{X}}
+\newcommand{\sY}{\mathcal{Y}}
+\newcommand{\sZ}{\mathcal{Z}}
+
+% mathfrak Letters
+\newcommand{\fa}{\mathfrak{a}}
+\newcommand{\fc}{\mathfrak{c}}
+\newcommand{\ff}{\mathfrak{f}}
+\newcommand{\fg}{\mathfrak{g}}
+\newcommand{\frakg}{\mathfrak{g}}
+\newcommand{\fm}{\mathfrak{m}}
+\newcommand{\ft}{\mathfrak{t}}
+\newcommand{\fP}{\mathfrak{P}}
+\newcommand{\fp}{\mathfrak{p}}
+\newcommand{\fq}{\mathfrak{q}}
+\newcommand{\fN}{\mathfrak{N}}
+
+
+% Field Theory
+\newcommand{\cha}{\operatorname{char}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Norm}{\mathbb{N}}
+\newcommand{\Fr}{\operatorname{Fr}}
+
+
+% Group theory
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Vol}{\operatorname{Vol}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\Stab}{\operatorname{Stab}}
+
+
+% Algebraic Geometry
+\newcommand{\Sing}{\operatorname{Sing}}
+\newcommand{\Tan}{\operatorname{Tan}}
+\newcommand{\Sec}{\operatorname{Sec}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Proj}{\operatorname{Proj}}
+\newcommand{\sHom}{\mathcal{H}om}
+\newcommand{\Pic}{\operatorname{Pic}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\Jac}{\operatorname{Jac}}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\etale}{\'etale}
+
+
+% Commutative Algebra
+\newcommand{\ann}{\operatorname{Ann}}
+\newcommand{\Ann}{\operatorname{Ann}}
+\newcommand{\Ass}{\operatorname{Ass}}
+\newcommand{\pd}{\operatorname{pd}}
+\newcommand{\depth}{\operatorname{depth}}
+
+
+% Number Theory
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\Art}{\operatorname{Art}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\Frac}{\operatorname{Frac}} % Fraction field
+\newcommand{\Reg}{\operatorname{Reg}}
+\newcommand{\reg}{\operatorname{reg}}
+\newcommand{\Disc}{\operatorname{Disc}}
+
+
+% Representation Theory
+\newcommand{\Ind}{\operatorname{Ind}}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\usepackage{bbm}
+\newcommand{\bOne}{\mathbbm{1}}
+
+
+% Category Theory
+\newcommand{\inj}{\hookrightarrow}
+\newcommand{\surj}{\twoheadrightarrow}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\Tor}{\operatorname{Tor}}
+
+%\theoremstyle{theorem}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{assumption}[thm]{Assumption}
+\newtheorem{propdefn}[thm]{Proposition-Definition}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{question}[thm]{Question}
+\newtheorem{example}[thm]{Example}
+\newtheorem*{exercise}{Exercise}
